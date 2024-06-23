@@ -12,6 +12,10 @@
     src: url("./src/font/Jost-Bold.ttf");
 }
 @font-face {
+    font-family: jost-semibold;
+    src: url("./src/font/Jost-SemiBold.ttf");
+}
+@font-face {
     font-family: jost-italic;
     src: url("./src/font/Jost-Italic.ttf");
 }
@@ -27,6 +31,7 @@
     --color-2: #292F36;
     --color-3: #F4F0EC;
     --container: 1200px;
+    --full-width: 100%;
 }
 /* Header */
 header{
@@ -62,7 +67,7 @@ header{
     transform: translate(-50% , -50%);
     bottom: -4px;
     left: 50%;
-    transition: all .3s;
+    transition: all .3s ease;
 }
 .nav-item:hover.nav-item::before{
     width: 110%;
@@ -70,5 +75,56 @@ header{
 .search-icon{
     width: 22px;
     display: inline-block;
+    vertical-align: middle;
+}
+/* Banner */
+.banner{
+    background-image: url("./src/img/banner.png");
+    background-position: bottom;
+    width: var(--full-width);
+    height: 920px;
+    position: relative;
+}
+.banner-title{
+    width: 567px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    /* transform: translateY(-50%); */
+    top: 40%;
+    left: 32%;
+}
+.banner-main-title{
+    display: block;
+    margin-bottom: 9px;
+    font-family: serif;
+    font-size: 85px;
+    color: var(--color-2);
+}
+.banner-main-subtitle{
+    display: block;
+    margin-bottom: 21px;
+    font-family: jost-regular;
+    font-size: 22px;
+    word-spacing: 3px;
+}
+.btn1 {
+    display: inline-block;
+    margin-top: 21px;
+    padding: 26px 48px;
+    background-color: var(--color-2);
+    color: #fff;
+    border-radius: 18px;
+    font-family: jost-semibold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    transition: all .3s ease;
+}
+.btn1:hover{
+    background-color: #3a434d;
+}
+.btn1 img{
+    width: 17px;
+    height: 15px;
     vertical-align: middle;
 }
