@@ -30,8 +30,32 @@
     --color-1: #CDA274;
     --color-2: #292F36;
     --color-3: #F4F0EC;
+    --color-4: #4D5053;
     --container: 1200px;
     --full-width: 100%;
+}
+/* Utilities */
+.big-heading-title{
+    font-family: serif;
+    font-size: 50px;
+}
+.heading-title{
+    display: block;
+    font-family: serif;
+    font-size: 25px; 
+}
+.pars{
+    font-family: jost-regular;
+    font-size: 22px;
+}
+.flesh1{
+    width: 17px;
+    height: 15px;
+    vertical-align: middle;
+}
+.btn-text{
+    font-family: jost-semibold;
+    font-size: 18px;
 }
 /* Header */
 header{
@@ -76,6 +100,7 @@ header{
     width: 22px;
     display: inline-block;
     vertical-align: middle;
+    cursor: pointer;
 }
 /* Banner */
 .banner{
@@ -114,8 +139,6 @@ header{
     background-color: var(--color-2);
     color: #fff;
     border-radius: 18px;
-    font-family: jost-semibold;
-    font-size: 18px;
     letter-spacing: 1px;
     vertical-align: middle;
     transition: all .3s ease;
@@ -123,8 +146,25 @@ header{
 .btn1:hover{
     background-color: #3a434d;
 }
-.btn1 img{
-    width: 17px;
-    height: 15px;
-    vertical-align: middle;
+/* Projects */
+.projects{
+    width: var(--container);
+    margin: 130px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.projects div{
+    display: inline-block;
+    padding: 8px;
+    width: 30%;
+    text-align: center;
+}
+.projects a{
+    color: var(--color-4);
+    display: block;
+}
+.project-text{
+    display: block;
+    margin: 20px 0px 48px 0px;
+    color: var(--color-4);
 }
