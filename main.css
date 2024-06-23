@@ -1,0 +1,74 @@
+/* Fonts */
+@font-face {
+    font-family: serif;
+    src: url("./src/font/DMSerifDisplay-Regular.ttf");
+}
+@font-face {
+    font-family: jost-regular;
+    src: url("./src/font/Jost-Regular.ttf");
+}
+@font-face {
+    font-family: jost-bold;
+    src: url("./src/font/Jost-Bold.ttf");
+}
+@font-face {
+    font-family: jost-italic;
+    src: url("./src/font/Jost-Italic.ttf");
+}
+/* All */
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+/* Root */
+:root{
+    --color-1: #CDA274;
+    --color-2: #292F36;
+    --color-3: #F4F0EC;
+    --container: 1200px;
+}
+/* Header */
+header{
+    width: var(--container);
+    margin: 0px auto;
+    padding: 43px;
+    vertical-align: bottom;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 177px;
+    height: 50px;
+}
+.main-nav , .main-nav ul , .main-nav ul li , .main-nav ul li a{
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--color-2);
+    font-size: 20px;
+    font-family: jost-regular;
+}
+.main-nav ul li{
+    margin-right: 28px;
+    position: relative;
+}
+.nav-item::before{
+    content: "";
+    height: 3px;
+    background-color: var(--color-1);
+    width: 0px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    bottom: -4px;
+    left: 50%;
+    transition: all .3s;
+}
+.nav-item:hover.nav-item::before{
+    width: 110%;
+}
+.search-icon{
+    width: 22px;
+    display: inline-block;
+    vertical-align: middle;
+}
