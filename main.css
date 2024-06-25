@@ -31,11 +31,13 @@
     --color-2: #292F36;
     --color-3: #F4F0EC;
     --color-4: #4D5053;
+    --color-5: #F4F0EC;
     --container: 1200px;
     --full-width: 100%;
 }
 /* Utilities */
 .big-heading-title{
+    display: block;
     font-family: serif;
     font-size: 50px;
 }
@@ -43,8 +45,10 @@
     display: block;
     font-family: serif;
     font-size: 25px; 
+    color: var(--color-2);
 }
 .pars{
+    display: block;
     font-family: jost-regular;
     font-size: 22px;
 }
@@ -149,7 +153,7 @@ header{
 /* Projects */
 .projects{
     width: var(--container);
-    margin: 130px auto 0px auto;
+    margin: 150px auto 150px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -167,4 +171,57 @@ header{
     display: block;
     margin: 20px 0px 48px 0px;
     color: var(--color-4);
+}
+/* About */
+.about{
+    width: var(--container);
+    margin: 0px auto;
+}
+.about .about-title{
+    display: inline-block;
+    width: 40%;
+    padding: 43px 0px;
+    vertical-align: top;
+}
+.about .about-title h2{
+    padding-right: 52px;
+    line-height: 62px;
+    margin-bottom: 33px;
+    color: var(--color-2);
+}
+.about .about-title > span{
+    padding-right: 40px;
+    margin-bottom: 45px;
+    color: var(--color-4);
+}
+.call{
+    margin-bottom: 47px;
+}
+.call div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.call .call-icon{
+    padding: 28px;
+    background-color: var(--color-5);
+    border-radius: 50%;
+    margin-right: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+.call .call-icon img{
+    width: 32px;
+}
+.call .call-num{
+    color: var(--color-4);
+}
+.call .call-num .tel{
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+.about .about-img{
+    display: inline-block;
+    text-align: end;
+    width: 58%;
+    vertical-align: top;
 }
