@@ -42,6 +42,12 @@
     font-size: 50px;
     color: var(--color-2);
 }
+.big-nums{
+    font-family: serif;
+    font-size: 85px;
+    color: var(--color-1);
+    margin-bottom: 16px;
+}
 .heading-title{
     display: block;
     font-family: serif;
@@ -72,6 +78,9 @@
 .btn-text{
     font-family: jost-semibold;
     font-size: 18px;
+}
+.vertical-border-box{
+    border-right: 0.5px solid var(--color-1);
 }
 /* Header */
 header{
@@ -326,5 +335,20 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+}
+/* Counter */
+.counter-sec{
+    width: var(--full-width);
+    background-color: var(--color-5);
+    padding: 140px 0px;
+    margin-bottom: 190px;
+}
+.counter-container{
+    width: var(--container);
+    margin: 0px auto;
+    text-align: center;
+}
+.counter-item{
+    display: inline-block;
+    padding: 0px 54px;
 }
