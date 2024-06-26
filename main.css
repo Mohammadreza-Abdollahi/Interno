@@ -157,24 +157,24 @@ header{
 .btn1:hover{
     background-color: #3a434d;
 }
-/* Projects */
-.projects{
+/* works */
+.works{
     width: var(--container);
     margin: 150px auto 150px auto;
     display: flex;
     justify-content: space-between;
 }
-.projects div{
+.works div{
     display: inline-block;
     padding: 8px;
     width: 30%;
     text-align: center;
 }
-.projects a{
+.works a{
     color: var(--color-4);
     display: block;
 }
-.project-text{
+.work-text{
     display: block;
     margin: 20px 0px 48px 0px;
     color: var(--color-4);
@@ -201,7 +201,7 @@ header{
     color: var(--color-4);
 }
 .call{
-    margin-bottom: 47px;
+    margin: 45px 0px 47px 0px;
 }
 .call div{
     display: inline-block;
@@ -271,4 +271,13 @@ header{
 }
 .testimonial-item .item-body{
     text-align: start;
+}
+/* brands*/
+.brand-sec{
+    width: var(--container);
+    margin: 140px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
 }
