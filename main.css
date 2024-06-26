@@ -64,6 +64,11 @@
     height: 15px;
     vertical-align: middle;
 }
+.flesh2{
+    width: 8px;
+    height: 18px;
+    vertical-align: middle;
+}
 .btn-text{
     font-family: jost-semibold;
     font-size: 18px;
@@ -276,8 +281,50 @@ header{
 .brand-sec{
     width: var(--container);
     margin: 140px auto;
+    padding: 0px 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 80px;
+}
+/* Projects */
+.projects-sec{
+    width: var(--container);
+    margin: 0px auto 130px auto;
+}
+.projects-sec .projects-head{
+    text-align: center;
+    width: 60%;
+    margin: 0px auto 90px auto;
+}
+.projects-sec .projects-head h2{
+    margin-bottom: 12px;
+}
+.projects-sec .project-items .project-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 100px;
+    margin-bottom: 55px;
+}
+.projects-sec .project-items .project-row .project-item .item-img{
+    margin-bottom: 24px;
+}
+.projects-sec .project-items .project-row .project-item .item-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects-sec .project-items .project-row .project-item .item-body span{
+    margin-bottom: -5px;
+}
+.projects-sec .project-items .project-row .project-item .item-body .body-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--color-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
