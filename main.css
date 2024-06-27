@@ -75,15 +75,42 @@
     width: 17px;
     height: 15px;
     vertical-align: middle;
+    margin-left: 11px;
 }
 .flesh2{
     width: 8px;
     height: 18px;
     vertical-align: middle;
 }
+.btn1 {
+    display: inline-block;
+    margin-top: 21px;
+    padding: 26px 48px;
+    background-color: var(--color-2);
+    color: #fff;
+    border-radius: 18px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    transition: all .3s ease;
+}
+.btn2 {
+    display: inline-block;
+    margin-top: 21px;
+    padding: 26px 48px;
+    background-color: var(--color-1);
+    color: #fff;
+    border-radius: 18px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    transition: all .3s ease;
+}
+.btn1:hover{
+    background-color: #3a434d;
+}
 .btn-text{
     font-family: jost-semibold;
     font-size: 18px;
+    vertical-align: middle;
 }
 .vertical-border-box{
     border-right: 0.5px solid var(--color-1);
@@ -92,7 +119,7 @@
 header{
     width: var(--container);
     margin: 0px auto;
-    padding: 43px;
+    padding: 5px 43px;
     vertical-align: bottom;
     display: flex;
     justify-content: space-around;
@@ -108,6 +135,7 @@ header{
     color: var(--color-2);
     font-size: 20px;
     font-family: jost-regular;
+    padding: 12px 0px;
 }
 .main-nav ul li{
     margin-right: 28px;
@@ -120,7 +148,7 @@ header{
     width: 0px;
     position: absolute;
     transform: translate(-50% , -50%);
-    bottom: -4px;
+    bottom: 16px;
     left: 50%;
     transition: all .3s ease;
 }
@@ -162,20 +190,6 @@ header{
     font-family: jost-regular;
     font-size: 22px;
     word-spacing: 3px;
-}
-.btn1 {
-    display: inline-block;
-    margin-top: 21px;
-    padding: 26px 48px;
-    background-color: var(--color-2);
-    color: #fff;
-    border-radius: 18px;
-    letter-spacing: 1px;
-    vertical-align: middle;
-    transition: all .3s ease;
-}
-.btn1:hover{
-    background-color: #3a434d;
 }
 /* works */
 .works{
@@ -378,6 +392,7 @@ header{
     gap: 27px;
 }
 .blog-sec .blog-container .blog-item{
+    position: relative;
     width: 30%;
     padding: 21px;
     border: 1px solid var(--color-6);
@@ -409,13 +424,21 @@ header{
 }
 .blog-sec .blog-container .blog-item .item-body .heading-title{
     padding-right: 35px;
+    height: 100px;
 }
 .blog-sec .blog-container .blog-item .item-body .item-footer{
     margin-top: 30px;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+.blog-sec .blog-container .blog-item .item-body .item-footer .ultra-small-pars{
+    position: absolute;
+    left: 22px;
+    bottom: 38px;
+    display: inline-block;
+}
+.blog-sec .blog-container .blog-item .item-body .item-footer a{
+    display: inline-block;
+    text-align: end;
 }
 .blog-sec .blog-container .blog-item .item-body .item-footer .btn{
     background-color: var(--color-5);
@@ -425,6 +448,10 @@ header{
     width: 52px;
     height: 52px;
     border-radius: 50%;
+    text-align: end;
+    position: absolute;
+    right: 22px;
+    bottom: 25px;
 }
 .blog-sec .blog-container .blog-item:nth-child(2n) .item-body .item-footer .btn{
     background-color: #fff;
@@ -432,4 +459,23 @@ header{
 .blog-sec .blog-container .blog-item .item-body .item-footer .btn img{
     width: 6px;
     height: 14px;
+}
+/* Contact */
+.contact-sec{
+    width: var(--container);
+    margin: 200px auto 135px auto;
+    background-color: var(--color-2);
+    border-radius: 70px;
+    text-align: center;
+}
+.contact-body{
+    padding: 80px 315px;
+}
+.contact-sec .big-heading-title{
+    color: #fff;
+    margin-bottom: 11px;
+}
+.contact-sec .pars{
+    color: #fff;
+    margin-bottom: 32px;
 }
