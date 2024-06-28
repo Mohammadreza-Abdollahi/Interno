@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/64911f2f0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./main.css">
     <title>Interno Interior</title>
 </head>
@@ -34,22 +35,33 @@
         </div>
     </section>
     <!-- works -->
-    <section class="works">
-        <div>
-            <h2 class="heading-title">work Plan</h2>
-            <p class="pars work-text">There are many variations of the passages of lorem Ipsum from available, majority.</p>
-            <a class="btn-text " href="#">Read More <img class="flesh1" src="./src/img/flesh-1.png" alt="FleshPic"></a>
-        </div>
-        <div>
-            <h2 class="heading-title">Interior Work</h2>
-            <p class="pars work-text">There are many variations of the passages of lorem Ipsum from available, majority.</p>
-            <a class="btn-text " href="#">Read More <img class="flesh1" src="./src/img/flesh-1.png" alt="FleshPic"></a>
-        </div>
-        <div>
-            <h2 class="heading-title">Realization</h2>
-            <p class="pars work-text">There are many variations of the passages of lorem Ipsum from available, majority.</p>
-            <a class="btn-text " href="#">Read More <img class="flesh1" src="./src/img/flesh-1.png" alt="FleshPic"></a>
-        </div>
+    <section class="works-sec">
+        <section class="works-slider swiper">
+            <section class="swiper-wrapper works-container">
+                <div class="swiper-slide works-item">
+                    <h3 class="heading-title">Project Plan</h3>
+                    <p class="pars">There are many variations of the passages of lorem Ipsum from available, majority.</p>
+                    <a href="#" class="btn-text">Read More <img loading="lazy" class="flesh1" src="src/img/flesh-1.png" alt=""></a>
+                </div>
+                <div class="swiper-slide works-item">
+                    <h3 class="heading-title">Interior Work</h3>
+                    <p class="pars">There are many variations of the passages of lorem Ipsum from available, majority.</p>
+                    <a href="#" class="btn-text">Read More <img loading="lazy" class="flesh1" src="src/img/flesh-1.png" alt=""></a>
+                </div>
+                <div class="swiper-slide works-item">
+                    <h3 class="heading-title">Realization</h3>
+                    <p class="pars">There are many variations of the passages of lorem Ipsum from available, majority.</p>
+                    <a href="#" class="btn-text">Read More <img loading="lazy" class="flesh1" src="src/img/flesh-1.png" alt=""></a>
+                </div>
+                <div class="swiper-slide works-item">
+                    <h3 class="heading-title">Project Plan</h3>
+                    <p class="pars">There are many variations of the passages of lorem Ipsum from available, majority.</p>
+                    <a href="#" class="btn-text">Read More <img loading="lazy" class="flesh1" src="src/img/flesh-1.png" alt=""></a>
+                </div>
+            </section>
+        </section>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </section>
     <!-- About Us -->
     <section class="about">
@@ -106,7 +118,7 @@
             <div class="testimonial-item">
                 <div class="item-head">
                     <div class="head-img">
-                        <img loading="lazy" src="src/img/person1.jpg" alt="">
+                        <img loading="lazy" src="src/img/person3.jpg" alt="">
                     </div>
                     <div class="head-inf">
                         <h3 class="heading-title">Benny Roll</h3>
@@ -339,8 +351,11 @@
         </div>
     </section>
     <!-- Copy -->
-     <section class="copy-sec">
+    <section class="copy-sec">
         <p>All rights reserved for Mohammadreza Abdollahi and Victor Flow &copy;</p>
-     </section>
+    </section>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
