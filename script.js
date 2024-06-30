@@ -27,15 +27,15 @@ const testimonialSwiper = new Swiper('.testimonial-slider', {
     el: '.testimonial-pagination',
     clickable: true,
   },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+});
+const brandSwiper = new Swiper('.brands-slider', {
+ slidesPerView: "auto",
+ loop: true,
+ centeredSlides: true,
+ speed: 5000,
+ allowTouchMove: false,
+ disableOnInteraction: false,
+ autoplay:{
+  delay: 1,
+ }
 });

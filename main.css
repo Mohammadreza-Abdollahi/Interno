@@ -341,7 +341,7 @@ header{
     position: relative;
 }
 .testimonial-item{
-    max-width: 327px;
+    max-width: 324px;
     height: 210px;
     background-color: #fff;
     padding: 53px 30px;
@@ -375,14 +375,43 @@ header{
     text-align: start;
 }
 /* brands*/
-.brand-sec{
+.brands-sec{
+    max-width: var(--container);
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+.brands-sec .brands-slider {
     width: var(--container);
+    overflow: hidden;
+  }
+.brands-container{
+    width: 340px;
     margin: 140px auto;
     padding: 0px 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 80px;
+    transition-timing-function: linear;
+}
+.brands-slider::after,
+.brands-slider::before{
+    content: "";
+    display: block;
+    width: 600px;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+}
+.brands-slider::after{
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 70%, rgb(255, 255, 255) 100%);
+    right: 0px;
+    top: 0px;
+}
+.brands-slider::before{
+    background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 70%, rgb(255, 255, 255) 100%);
+    left: 0px;
+    top: 0px;
 }
 /* Projects */
 .projects-sec{
