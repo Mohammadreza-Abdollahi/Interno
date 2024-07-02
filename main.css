@@ -23,7 +23,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 /* Root */
 :root{
@@ -37,6 +37,27 @@
     --full-width: 100%;
     --swiper-pagination-color: var(--color-1);
     --swiper-pagination-bullet-size: 20px;
+}
+/* Animations */
+@keyframes fromLeft {
+    from{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes fromTop {
+    from{
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 /* Utilities */
 .big-heading-title{
@@ -148,6 +169,10 @@ header{
 .logo{
     width: 177px;
     height: 50px;
+    animation: fromTop 1.5s;
+}
+.main-nav{
+    animation: fromTop 1.8s;
 }
 .main-nav , .main-nav ul , .main-nav ul li , .main-nav ul li a{
     display: inline-block;
@@ -160,6 +185,7 @@ header{
 .main-nav ul li{
     margin-right: 28px;
     position: relative;
+    vertical-align: middle;
 }
 .nav-item::before{
     content: "";
@@ -176,11 +202,45 @@ header{
     width: 110%;
 }
 .search-icon{
-    width: 22px;
+    width: 24px;
+    height: 24px;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
     cursor: pointer;
 }
+.search-group{
+    position:relative;
+    display:flex;
+  }
+  .search-group input[type="checkbox"]{
+    display:none;
+  }
+  .search-group .show + label{
+    display:flex;
+    align-items: center;
+  }
+  .search-group .show + label input{
+    transition: all .5s ease;
+    width:0%;
+    opacity:0
+  }
+  .search-group .show:checked + label input{
+    width:100%;
+    opacity:1
+  }
+  .search-group .search-inp{
+    font-size: 20px;
+    font-family: jost-regular;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 2px solid var(--color-4);
+    padding: 3px 5px 0px 5px;
+  }
+  .search-group .search-inp:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--color-1);
+  }
 /* Banner */
 .banner{
     background-image: url("./src/img/banner.png");
@@ -203,6 +263,7 @@ header{
     font-family: serif;
     font-size: 85px;
     color: var(--color-2);
+    animation: fromLeft 1.8s;
 }
 .banner-main-subtitle{
     display: block;
@@ -210,6 +271,12 @@ header{
     font-family: jost-regular;
     font-size: 22px;
     word-spacing: 3px;
+    animation: fromLeft 1.8s;
+    animation-delay: .2s;
+}
+.banner-btn{
+    animation: fromLeft 1.8s;
+    animation-delay: .4s;
 }
 /* works */
 .works-sec{
