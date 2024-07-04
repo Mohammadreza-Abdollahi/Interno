@@ -1,0 +1,65 @@
+a{
+    color: var(--color-2);
+}
+/* Banner */
+.banner-sec{
+    width: var(--full-width);
+    height: 356px;
+    background-image: url("src/img/about-page/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.banner-title{
+    /* max-width: 503px; */
+    position: absolute;
+    transform: translateX(-50%) translateY(-100%);
+    top: 100%;
+    left: 50%;
+    padding: 38px 0px 38px 0px;
+    background-color: #fff;
+    border-top-left-radius: 37px;
+    border-top-right-radius: 37px;
+}
+.banner-title h2,
+.banner-title span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* quotes */
+.quotes-sec{
+    width: var(--container);
+    margin: 200px auto;
+}
+.quotes-titles{
+    max-width: 876px;
+    margin: 0px auto;
+    padding: 67px 62px;
+    text-align: center;
+    position: relative;
+}
+.quotes-titles span{
+    width: 730px;
+    display: block;
+    margin: 0px auto 34px auto;
+}
+.quotes-titles .pars{
+    font-size: 25px;
+}
+.quote-icon{
+    font-size: 60px;
+    margin-bottom: 27px;
+}
+.quotes-titles .left-patt{
+    position: absolute;
+    transform: translateY(-50%);
+    left: 80px;
+    top: 50%;
+}
+.quotes-titles .right-patt{
+    position: absolute;
+    transform: translateY(-50%) scaleX(-1);
+    right: 80px;
+    top: 50%;
+}
