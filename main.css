@@ -29,6 +29,10 @@
     padding: 0px;
     text-decoration: none !important;
 }
+a:hover{
+    color: var(--color-1);
+    transition: color .3s;
+}
 /* Root */
 :root{
     --color-1: #CDA274;

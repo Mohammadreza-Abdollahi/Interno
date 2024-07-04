@@ -153,3 +153,76 @@ a{
     transition: all .3s;
     color: var(--color-1);
 }
+/* MailForm */
+.formbox-sec{
+    max-width: 700px;
+    margin: 213px auto 135px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formbox-sec h2{
+    max-width: 630px;
+    text-align: center;
+    margin: 0px auto 77px auto;
+}
+.form-row-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.form-row-1 .form-inp-container{
+    width: 300px;
+    position: relative;
+}
+.form-row-1 .form-inp-container input{
+    width: 73%;
+    padding: 4px 5px 5px 75px;
+    font-size: 22px;
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--color-4);
+    transition: border-color .3s;
+}
+.form-row-1 .form-inp-container input:focus{
+    border-color: var(--color-1);
+    transition: border-color .3s;
+}
+.form-row-1 .form-inp-container label{
+    position: absolute;
+    left: -0px;
+    top: -13px;
+    font-family: jost-regular;
+    font-size: 24px;
+    color: var(--color-4);
+}
+.form-row-2{
+    margin: 77px 0px 77px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.form-row-2 textarea{
+    width: 100%;
+    padding: 8px 5px 5px 5px;
+    font-size: 22px;
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--color-4);
+    transition: border-color .3s;
+    resize: none;
+}
+.form-row-2 textarea:focus{
+    border-color: var(--color-1);
+}
+.form-row-2 label{
+    position: absolute;
+    left: -0px;
+    top: -25px;
+    font-family: jost-regular;
+    font-size: 24px;
+    color: var(--color-4);
+}
