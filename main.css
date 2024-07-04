@@ -35,7 +35,6 @@
     --color-2: #292F36;
     --color-3: #F4F0EC;
     --color-4: #4D5053;
-    --color-5: #F4F0EC;
     --color-6: #E7E7E7;
     --container: 1200px;
     --full-width: 100%;
@@ -320,7 +319,7 @@ header{
     top: 45%;
     width: 50px;
     height: 50px;
-    background-color: var(--color-5);
+    background-color: var(-color-3);
     padding: 14px;
     border-radius: 50%;
     color: var(--color-1);
@@ -331,7 +330,7 @@ header{
     top: 45%;
     width: 50px;
     height: 50px;
-    background-color: var(--color-5);
+    background-color: var(-color-3);
     padding: 14px;
     border-radius: 50%;
     color: var(--color-1);
@@ -375,7 +374,7 @@ header{
 }
 .call .call-icon{
     padding: 28px;
-    background-color: var(--color-5);
+    background-color: var(-color-3);
     border-radius: 50%;
     margin-right: 15px;
     text-align: center;
@@ -403,7 +402,7 @@ header{
     margin: auto;
     padding: 88px 24px 10px 24px;
     text-align: center;
-    background-color: var(--color-5);
+    background-color: var(-color-3);
     border-radius: 70px;
 }
 .testimonial-slider{
@@ -525,7 +524,7 @@ header{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: var(--color-5);
+    background-color: var(-color-3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -533,7 +532,7 @@ header{
 /* Counter */
 .counter-sec{
     width: var(--full-width);
-    background-color: var(--color-5);
+    background-color: var(-color-3);
     padding: 140px 0px;
     margin-bottom: 190px;
 }
@@ -574,7 +573,7 @@ header{
 
 }
 .blog-sec .blog-container .blog-item:nth-child(2n){
-    background-color: var(--color-5);
+    background-color: var(-color-3);
 }
 .blog-sec .blog-container .blog-item .item-img{
     position: relative;
@@ -615,7 +614,7 @@ header{
     text-align: end;
 }
 .blog-sec .blog-container .blog-item .item-body .item-footer .btn{
-    background-color: var(--color-5);
+    background-color: var(-color-3);
     display: flex;
     justify-content: center;
     align-items: center;
