@@ -21,7 +21,7 @@ a{
     border-top-left-radius: 37px;
     border-top-right-radius: 37px;
 }
-.banner-title h2,
+.banner-title h1,
 .banner-title span{
     display: flex;
     justify-content: center;
@@ -54,12 +54,36 @@ a{
 .quotes-titles .left-patt{
     position: absolute;
     transform: translateY(-50%);
-    left: 80px;
+    left: 22px;
     top: 50%;
 }
 .quotes-titles .right-patt{
     position: absolute;
     transform: translateY(-50%) scaleX(-1);
-    right: 80px;
+    right: 22px;
     top: 50%;
+}
+/* What Do */
+.result-do-sec{
+    width: var(--container);
+    margin: 0px auto 150px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.result-do-body{
+    width: 37%;
+    vertical-align: top;
+    padding: 21px 0px;
+    text-align: start;
+}
+.result-do-body .pars{
+    margin: 23px 0px 41px 0px;
+}
+.result-do-img{
+    width: 56%;
+    text-align: end;
+    vertical-align: top;
+}
+.result-do-img img{
+    border-radius: 70px;
 }
